@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using LibreriaDLL;
 
 namespace Sistema_Punto_de_Venta
 {
@@ -20,18 +21,8 @@ namespace Sistema_Punto_de_Venta
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conexion = new SqlConnection("Data Source=.;Initial Catalog=Sistema;Integrated Security=True");
 
-            try
-            {
-                conexion.Open();
-                MessageBox.Show("Conexion Exitosa");
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show("Ha ocurrido un error, intente de nuevo" + error);
-            }
-            
+            Biblioteca.Herramientas("SELECT * FORM Clientes where id=1");
         }
     }
 }

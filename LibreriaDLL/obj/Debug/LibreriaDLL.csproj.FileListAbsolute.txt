@@ -1,0 +1,6 @@
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\LibreriaDLL\bin\Debug\LibreriaDLL.dll
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\LibreriaDLL\bin\Debug\LibreriaDLL.pdb
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\LibreriaDLL\obj\Debug\LibreriaDLL.csproj.AssemblyReference.cache
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\LibreriaDLL\obj\Debug\LibreriaDLL.csproj.CoreCompileInputs.cache
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\LibreriaDLL\obj\Debug\LibreriaDLL.dll
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\LibreriaDLL\obj\Debug\LibreriaDLL.pdb
