@@ -1,0 +1,10 @@
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\bin\Debug\Sistema_Punto_de_Venta.exe.config
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\bin\Debug\Sistema_Punto_de_Venta.exe
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\bin\Debug\Sistema_Punto_de_Venta.pdb
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\obj\Debug\Sistema_Punto_de_Venta.csproj.AssemblyReference.cache
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\obj\Debug\Sistema_Punto_de_Venta.Form1.resources
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\obj\Debug\Sistema_Punto_de_Venta.Properties.Resources.resources
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\obj\Debug\Sistema_Punto_de_Venta.csproj.GenerateResource.cache
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\obj\Debug\Sistema_Punto_de_Venta.csproj.CoreCompileInputs.cache
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\obj\Debug\Sistema_Punto_de_Venta.exe
+C:\Users\ccard\source\repos\Sistema_Punto_de_Venta\obj\Debug\Sistema_Punto_de_Venta.pdb
