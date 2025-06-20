@@ -12,9 +12,9 @@ using LibreriaDLL;
 
 namespace Sistema_Punto_de_Venta
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -31,7 +31,18 @@ namespace Sistema_Punto_de_Venta
 
                 if (cuenta == textUsuario.Text.Trim() && contrasena == textPassword.Text.Trim())
                 {
-                    MessageBox.Show("Inicio de sesion Exitoso");
+                    if (Convert.ToBoolean(conectar.Tables[0].Rows[0]["validar_admin"].ToString().Trim()) == true)
+                    {
+                        Administrador Admin = new Administrador();
+                        this.Hide();
+                        Admin.Show();
+                    }
+                    else
+                    {
+                        Usuario User = new Usuario();
+                        this.Hide();
+                        User.Show();
+                    }
                 }
                 
             }
@@ -39,6 +50,11 @@ namespace Sistema_Punto_de_Venta
             {
                 MessageBox.Show("Error credenciales invalidas" + Error.Message);
             }
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

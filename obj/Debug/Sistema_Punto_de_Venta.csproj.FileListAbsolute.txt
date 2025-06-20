@@ -14,10 +14,12 @@ C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\bin\Debug\Si
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\bin\Debug\LibreriaDLL.dll
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\bin\Debug\LibreriaDLL.pdb
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.csproj.AssemblyReference.cache
-C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Form1.resources
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Properties.Resources.resources
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.csproj.GenerateResource.cache
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.csproj.CoreCompileInputs.cache
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_.E7DD599B.Up2Date
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.exe
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.pdb
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Administrador.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Login.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Usuario.resources
