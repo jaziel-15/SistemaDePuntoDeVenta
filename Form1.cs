@@ -21,8 +21,24 @@ namespace Sistema_Punto_de_Venta
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string validar = string.Format("SELECT * FROM Usuarios WHERE account= '{0}' AND password= '{1}'", textUsuario.Text.Trim(), textPassword.Text.Trim());
+                DataSet conectar = Biblioteca.Herramientas(validar);
 
-            Biblioteca.Herramientas("SELECT * FORM Clientes where id=1");
+                string cuenta = conectar.Tables[0].Rows[0]["account"].ToString().Trim();
+                string contrasena = conectar.Tables[0].Rows[0]["password"].ToString().Trim();
+
+                if (cuenta == textUsuario.Text.Trim() && contrasena == textPassword.Text.Trim())
+                {
+                    MessageBox.Show("Inicio de sesion Exitoso");
+                }
+                
+            }
+            catch (Exception Error)
+            {
+                MessageBox.Show("Error credenciales invalidas" + Error.Message);
+            }
         }
     }
 }
