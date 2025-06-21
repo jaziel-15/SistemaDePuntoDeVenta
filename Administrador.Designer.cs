@@ -40,9 +40,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(625, 360);
             // 
             // pictureBox1
             // 
@@ -94,6 +97,7 @@
             this.lAdmin.Name = "lAdmin";
             this.lAdmin.Size = new System.Drawing.Size(108, 23);
             this.lAdmin.TabIndex = 4;
+            this.lAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lAdminUser
             // 
@@ -102,6 +106,7 @@
             this.lAdminUser.Name = "lAdminUser";
             this.lAdminUser.Size = new System.Drawing.Size(108, 23);
             this.lAdminUser.TabIndex = 5;
+            this.lAdminUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lAdminCodigo
             // 
@@ -110,6 +115,7 @@
             this.lAdminCodigo.Name = "lAdminCodigo";
             this.lAdminCodigo.Size = new System.Drawing.Size(108, 23);
             this.lAdminCodigo.TabIndex = 6;
+            this.lAdminCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -159,25 +165,11 @@
             this.button4.Text = "Cerrar Sesion";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Chocolate;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Swis721 Blk BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(580, 359);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 23);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Salir";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(745, 405);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -198,6 +190,18 @@
             this.Text = "Administrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Administrador_FormClosed);
             this.Load += new System.EventHandler(this.Administrador_Load);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.lAdmin, 0);
+            this.Controls.SetChildIndex(this.lAdminUser, 0);
+            this.Controls.SetChildIndex(this.lAdminCodigo, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -216,6 +220,5 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
     }
 }

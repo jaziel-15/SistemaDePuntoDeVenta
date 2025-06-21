@@ -11,7 +11,7 @@ using LibreriaDLL;
 
 namespace Sistema_Punto_de_Venta
 {
-    public partial class Administrador : Form
+    public partial class Administrador : FormBase
     {
         public Administrador()
         {

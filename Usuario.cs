@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Sistema_Punto_de_Venta
 {
-    public partial class Usuario : Form
+    public partial class Usuario : FormBase
     {
         public Usuario()
         {

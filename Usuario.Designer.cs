@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuario));
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,17 +42,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button5
+            // btnSalir
             // 
-            this.button5.BackColor = System.Drawing.Color.Chocolate;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Swis721 Blk BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(544, 367);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 23);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "Salir";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnSalir.Location = new System.Drawing.Point(567, 354);
             // 
             // button4
             // 
@@ -98,6 +89,7 @@
             this.lCodigo.Name = "lCodigo";
             this.lCodigo.Size = new System.Drawing.Size(108, 23);
             this.lCodigo.TabIndex = 18;
+            this.lCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lUser
             // 
@@ -107,6 +99,7 @@
             this.lUser.Name = "lUser";
             this.lUser.Size = new System.Drawing.Size(108, 23);
             this.lUser.TabIndex = 17;
+            this.lUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LNombre
             // 
@@ -115,6 +108,7 @@
             this.LNombre.Name = "LNombre";
             this.LNombre.Size = new System.Drawing.Size(108, 23);
             this.LNombre.TabIndex = 16;
+            this.LNombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -163,9 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(709, 424);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
@@ -185,14 +177,23 @@
             this.Text = "Usuario";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Usuario_FormClosed);
             this.Load += new System.EventHandler(this.Usuario_Load);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.LNombre, 0);
+            this.Controls.SetChildIndex(this.lUser, 0);
+            this.Controls.SetChildIndex(this.lCodigo, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;

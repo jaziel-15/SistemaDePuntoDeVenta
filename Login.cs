@@ -12,7 +12,7 @@ using LibreriaDLL;
 
 namespace Sistema_Punto_de_Venta
 {
-    public partial class Login : Form
+    public partial class Login : FormBase
     {
         public Login()
         {
