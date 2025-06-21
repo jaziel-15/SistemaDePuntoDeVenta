@@ -33,9 +33,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lCodigo = new System.Windows.Forms.Label();
+            this.lUser = new System.Windows.Forms.Label();
+            this.LNombre = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,30 +91,30 @@
             this.button1.Text = "Principal";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // lCodigo
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(237, 173);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 23);
-            this.label6.TabIndex = 18;
+            this.lCodigo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lCodigo.Location = new System.Drawing.Point(237, 173);
+            this.lCodigo.Name = "lCodigo";
+            this.lCodigo.Size = new System.Drawing.Size(108, 23);
+            this.lCodigo.TabIndex = 18;
             // 
-            // label5
+            // lUser
             // 
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(237, 126);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 23);
-            this.label5.TabIndex = 17;
+            this.lUser.BackColor = System.Drawing.SystemColors.Control;
+            this.lUser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lUser.Location = new System.Drawing.Point(237, 126);
+            this.lUser.Name = "lUser";
+            this.lUser.Size = new System.Drawing.Size(108, 23);
+            this.lUser.TabIndex = 17;
             // 
-            // label4
+            // LNombre
             // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Location = new System.Drawing.Point(237, 75);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 23);
-            this.label4.TabIndex = 16;
+            this.LNombre.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LNombre.Location = new System.Drawing.Point(237, 75);
+            this.LNombre.Name = "LNombre";
+            this.LNombre.Size = new System.Drawing.Size(108, 23);
+            this.LNombre.TabIndex = 16;
             // 
             // label3
             // 
@@ -151,9 +151,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Location = new System.Drawing.Point(439, 59);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 158);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
@@ -167,9 +169,9 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lCodigo);
+            this.Controls.Add(this.lUser);
+            this.Controls.Add(this.LNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -179,8 +181,10 @@
             this.MaximumSize = new System.Drawing.Size(725, 463);
             this.MinimumSize = new System.Drawing.Size(725, 463);
             this.Name = "Usuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuario";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Usuario_FormClosed);
+            this.Load += new System.EventHandler(this.Usuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -192,9 +196,9 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lCodigo;
+        private System.Windows.Forms.Label lUser;
+        private System.Windows.Forms.Label LNombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

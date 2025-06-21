@@ -62,9 +62,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(122, 37);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 136);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -73,14 +75,14 @@
             this.textUsuario.Location = new System.Drawing.Point(213, 207);
             this.textUsuario.Name = "textUsuario";
             this.textUsuario.Size = new System.Drawing.Size(100, 20);
-            this.textUsuario.TabIndex = 3;
+            this.textUsuario.TabIndex = 0;
             // 
             // textPassword
             // 
             this.textPassword.Location = new System.Drawing.Point(213, 244);
             this.textPassword.Name = "textPassword";
             this.textPassword.Size = new System.Drawing.Size(100, 20);
-            this.textPassword.TabIndex = 4;
+            this.textPassword.TabIndex = 1;
             // 
             // label1
             // 
@@ -106,10 +108,11 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.btnIniciar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(381, 353);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -123,6 +126,7 @@
             this.MaximumSize = new System.Drawing.Size(397, 392);
             this.MinimumSize = new System.Drawing.Size(397, 392);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
