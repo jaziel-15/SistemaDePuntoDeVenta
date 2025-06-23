@@ -24,3 +24,9 @@ C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Si
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Login.resources
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Usuario.resources
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.FormBase.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Consultas.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.ContenedorPrincipal.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Mantenimiento.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Procesos.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.MantenimientoClientes.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.MantenimientoProductos.resources

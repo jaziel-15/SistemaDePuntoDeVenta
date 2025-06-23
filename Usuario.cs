@@ -36,5 +36,12 @@ namespace Sistema_Punto_de_Venta
             string imagen = Data.Tables[0].Rows[0]["imagen"].ToString();
             pictureBox1.Image = Image.FromFile(imagen);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal Cont_princial = new ContenedorPrincipal();
+            this.Hide();
+            Cont_princial.Show();
+        }
     }
 }
