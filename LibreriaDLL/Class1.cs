@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-
+using System.Windows.Forms;
 
 namespace LibreriaDLL
 {
@@ -24,6 +24,16 @@ namespace LibreriaDLL
             conexion.Close();
 
             return dll;
+        }
+
+        public static Boolean ValidarFormulario (Control ObjetoError, ErrorProvider ErrorProvider)
+        {
+            Boolean siError = false;
+
+            foreach (Control campo in ObjetoError.Controls )
+            {
+
+            }
         }
     }
 }

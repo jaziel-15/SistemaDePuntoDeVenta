@@ -110,5 +110,12 @@ namespace Sistema_Punto_de_Venta
             Mancli.MdiParent = this;
             Mancli.Show();
         }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MantenimientoProductos ManPro = new MantenimientoProductos();
+            ManPro.MdiParent = this;
+            ManPro.Show();
+        }
     }
 }
