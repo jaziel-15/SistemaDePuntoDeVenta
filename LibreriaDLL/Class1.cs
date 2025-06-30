@@ -32,8 +32,25 @@ namespace LibreriaDLL
 
             foreach (Control campo in ObjetoError.Controls )
             {
+                if (campo is ErrorTxtBox)
+                {
+                    ErrorTxtBox objeto = (ErrorTxtBox)campo;
 
+                    if (objeto.Validar == true)
+                    {
+                        if (string.IsNullOrEmpty(objeto.Text.Trim()))
+                        {
+                            ErrorProvider.SetError(objeto, "Los campos no pueden estar vacios");
+                            siError = true;
+                        }
+                    }
+                    else
+                    {
+                        ErrorProvider.SetError(objeto, "");
+                    }
+                }
             }
+            return siError;
         }
     }
 }

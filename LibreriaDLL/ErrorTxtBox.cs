@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace LibreriaDLL
 {
-    public partial class ErrorTxtBox : UserControl
+    public partial class ErrorTxtBox : TextBox
     {
         public ErrorTxtBox()
         {

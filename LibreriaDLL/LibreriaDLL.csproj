@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="ErrorTxtBox.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="ErrorTxtBox.Designer.cs">
       <DependentUpon>ErrorTxtBox.cs</DependentUpon>
