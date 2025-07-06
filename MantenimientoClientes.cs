@@ -58,5 +58,26 @@ namespace Sistema_Punto_de_Venta
 
         }
 
+        private void textID_Cliente_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.Clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textID_Cliente.Text.Trim()) == false && string.IsNullOrEmpty(textNombre_Cliente.Text.Trim()) == false && string.IsNullOrEmpty(textApellido_Cliente.Text.Trim()) == false)
+            {
+                textID_Cliente.Text = "";
+                textNombre_Cliente.Text = "";
+                textApellido_Cliente.Text = "";
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConsultarCliente ConsClie = new ConsultarCliente();
+            ConsClie.Show();
+        }
     }
 }

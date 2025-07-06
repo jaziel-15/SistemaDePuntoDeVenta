@@ -30,3 +30,6 @@ C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Si
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Procesos.resources
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.MantenimientoClientes.resources
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.MantenimientoProductos.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.ConsultarCliente.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.ConsultarProductos.resources
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Facturacion.resources

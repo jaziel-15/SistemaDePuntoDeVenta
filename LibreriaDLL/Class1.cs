@@ -44,9 +44,24 @@ namespace LibreriaDLL
                             siError = true;
                         }
                     }
-                    else
+                   if (objeto.ValidarNumeros == true)
                     {
-                        ErrorProvider.SetError(objeto, "");
+                        int contador = 0, EncontrarLetras = 0;
+
+                        foreach (char letra in objeto.Text.Trim())
+                        {
+                            if (char.IsLetter(objeto.Text.Trim(), contador))
+                            {
+                                EncontrarLetras++;
+                            }
+                            contador++;
+                        }
+
+                        if(EncontrarLetras != 0)
+                        {
+                            siError = true;
+                            ErrorProvider.SetError(objeto, "Solo se aceptan numeros");
+                        }
                     }
                 }
             }

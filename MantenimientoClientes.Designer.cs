@@ -37,6 +37,7 @@
             this.textID_Cliente = new LibreriaDLL.ErrorTxtBox();
             this.textNombre_Cliente = new LibreriaDLL.ErrorTxtBox();
             this.textApellido_Cliente = new LibreriaDLL.ErrorTxtBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             this.button1.Location = new System.Drawing.Point(53, 289);
             this.button1.Size = new System.Drawing.Size(75, 28);
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -66,6 +68,7 @@
             this.button3.Location = new System.Drawing.Point(268, 289);
             this.button3.Size = new System.Drawing.Size(75, 28);
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -147,14 +150,17 @@
             this.textID_Cliente.Size = new System.Drawing.Size(131, 20);
             this.textID_Cliente.TabIndex = 21;
             this.textID_Cliente.Validar = true;
+            this.textID_Cliente.ValidarNumeros = true;
+            this.textID_Cliente.TextChanged += new System.EventHandler(this.textID_Cliente_TextChanged);
             // 
             // textNombre_Cliente
             // 
-            this.textNombre_Cliente.Location = new System.Drawing.Point(141, 155);
+            this.textNombre_Cliente.Location = new System.Drawing.Point(142, 155);
             this.textNombre_Cliente.Name = "textNombre_Cliente";
             this.textNombre_Cliente.Size = new System.Drawing.Size(131, 20);
             this.textNombre_Cliente.TabIndex = 22;
             this.textNombre_Cliente.Validar = true;
+            this.textNombre_Cliente.ValidarNumeros = false;
             // 
             // textApellido_Cliente
             // 
@@ -163,6 +169,7 @@
             this.textApellido_Cliente.Size = new System.Drawing.Size(131, 20);
             this.textApellido_Cliente.TabIndex = 23;
             this.textApellido_Cliente.Validar = true;
+            this.textApellido_Cliente.ValidarNumeros = false;
             // 
             // MantenimientoClientes
             // 
@@ -192,6 +199,7 @@
             this.Controls.SetChildIndex(this.textID_Cliente, 0);
             this.Controls.SetChildIndex(this.textNombre_Cliente, 0);
             this.Controls.SetChildIndex(this.textApellido_Cliente, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenimientoProductos));
-            this.textID_Producto = new System.Windows.Forms.TextBox();
-            this.textDescripcion = new System.Windows.Forms.TextBox();
-            this.textPrecio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.textID_Producto = new LibreriaDLL.ErrorTxtBox();
+            this.textDescripcion = new LibreriaDLL.ErrorTxtBox();
+            this.textPrecio = new LibreriaDLL.ErrorTxtBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             this.button1.Location = new System.Drawing.Point(45, 277);
             this.button1.Size = new System.Drawing.Size(74, 25);
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -66,6 +68,7 @@
             this.button3.Location = new System.Drawing.Point(260, 277);
             this.button3.Size = new System.Drawing.Size(74, 25);
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -82,28 +85,6 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Swis721 Blk BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.UseVisualStyleBackColor = false;
-            // 
-            // textID_Producto
-            // 
-            this.textID_Producto.Location = new System.Drawing.Point(133, 84);
-            this.textID_Producto.Name = "textID_Producto";
-            this.textID_Producto.Size = new System.Drawing.Size(128, 20);
-            this.textID_Producto.TabIndex = 5;
-            // 
-            // textDescripcion
-            // 
-            this.textDescripcion.Location = new System.Drawing.Point(132, 122);
-            this.textDescripcion.Multiline = true;
-            this.textDescripcion.Name = "textDescripcion";
-            this.textDescripcion.Size = new System.Drawing.Size(128, 67);
-            this.textDescripcion.TabIndex = 6;
-            // 
-            // textPrecio
-            // 
-            this.textPrecio.Location = new System.Drawing.Point(132, 206);
-            this.textPrecio.Name = "textPrecio";
-            this.textPrecio.Size = new System.Drawing.Size(128, 20);
-            this.textPrecio.TabIndex = 7;
             // 
             // label1
             // 
@@ -163,19 +144,48 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Productos";
             // 
+            // textID_Producto
+            // 
+            this.textID_Producto.Location = new System.Drawing.Point(132, 81);
+            this.textID_Producto.Name = "textID_Producto";
+            this.textID_Producto.Size = new System.Drawing.Size(128, 20);
+            this.textID_Producto.TabIndex = 13;
+            this.textID_Producto.Validar = true;
+            this.textID_Producto.ValidarNumeros = true;
+            this.textID_Producto.TextChanged += new System.EventHandler(this.textID_Producto_TextChanged);
+            // 
+            // textDescripcion
+            // 
+            this.textDescripcion.Location = new System.Drawing.Point(132, 121);
+            this.textDescripcion.Multiline = true;
+            this.textDescripcion.Name = "textDescripcion";
+            this.textDescripcion.Size = new System.Drawing.Size(128, 67);
+            this.textDescripcion.TabIndex = 14;
+            this.textDescripcion.Validar = true;
+            this.textDescripcion.ValidarNumeros = false;
+            // 
+            // textPrecio
+            // 
+            this.textPrecio.Location = new System.Drawing.Point(132, 208);
+            this.textPrecio.Name = "textPrecio";
+            this.textPrecio.Size = new System.Drawing.Size(128, 20);
+            this.textPrecio.TabIndex = 15;
+            this.textPrecio.Validar = true;
+            this.textPrecio.ValidarNumeros = false;
+            // 
             // MantenimientoProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(492, 397);
+            this.Controls.Add(this.textPrecio);
+            this.Controls.Add(this.textDescripcion);
+            this.Controls.Add(this.textID_Producto);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textPrecio);
-            this.Controls.Add(this.textDescripcion);
-            this.Controls.Add(this.textID_Producto);
             this.Name = "MantenimientoProductos";
             this.Text = "MantenimientoProductos";
             this.Controls.SetChildIndex(this.btnSalir, 0);
@@ -183,14 +193,15 @@
             this.Controls.SetChildIndex(this.button2, 0);
             this.Controls.SetChildIndex(this.button3, 0);
             this.Controls.SetChildIndex(this.button4, 0);
-            this.Controls.SetChildIndex(this.textID_Producto, 0);
-            this.Controls.SetChildIndex(this.textDescripcion, 0);
-            this.Controls.SetChildIndex(this.textPrecio, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.textID_Producto, 0);
+            this.Controls.SetChildIndex(this.textDescripcion, 0);
+            this.Controls.SetChildIndex(this.textPrecio, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -198,14 +209,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textID_Producto;
-        private System.Windows.Forms.TextBox textDescripcion;
-        private System.Windows.Forms.TextBox textPrecio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
+        private LibreriaDLL.ErrorTxtBox textID_Producto;
+        private LibreriaDLL.ErrorTxtBox textDescripcion;
+        private LibreriaDLL.ErrorTxtBox textPrecio;
     }
 }

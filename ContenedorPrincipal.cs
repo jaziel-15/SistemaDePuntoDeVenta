@@ -117,5 +117,26 @@ namespace Sistema_Punto_de_Venta
             ManPro.MdiParent = this;
             ManPro.Show();
         }
+
+        private void productosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultarProductos ConsPro = new ConsultarProductos();
+            ConsPro.MdiParent = this;
+            ConsPro.Show();
+        }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultarCliente ConsCli = new ConsultarCliente();
+            ConsCli.MdiParent = this;
+            ConsCli.Show();
+        }
+
+        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion Fact = new Facturacion();
+            Fact.MdiParent = this;
+            Fact.Show();
+        }
     }
 }

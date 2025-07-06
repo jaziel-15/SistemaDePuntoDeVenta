@@ -35,16 +35,23 @@ namespace Sistema_Punto_de_Venta
 
         public override Boolean Guardar()
         {
-            try
+            if (Biblioteca.ValidarFormulario(this, errorProvider1) == false)
             {
-                string insertar = string.Format("EXEC ActualizarProductos '{0}','{1}','{2}'",textID_Producto.Text.Trim(),textDescripcion.Text.Trim(),textPrecio.Text.Trim());
-                Biblioteca.Herramientas(insertar);
-                MessageBox.Show("Producto Guaraddo correctamente");
-                return true;
-            } 
-            catch (Exception error)
+                try
+                {
+                    string insertar = string.Format("EXEC ActualizarClientes '{0}','{1}','{2}'", textID_Producto.Text.Trim(), textDescripcion.Text.Trim(), textPrecio.Text.Trim());
+                    Biblioteca.Herramientas(insertar);
+                    MessageBox.Show("Cliente Guaraddo correctamente");
+                    return true;
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Ha ocurrido un error" + error.Message);
+                    return false;
+                }
+            }
+            else
             {
-                MessageBox.Show("Ha ocurrido un error"+ error.Message);
                 return false;
             }
         }
@@ -66,6 +73,26 @@ namespace Sistema_Punto_de_Venta
 
         }
 
+        private void textID_Producto_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.Clear();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textID_Producto.Text.Trim()) == false && string.IsNullOrEmpty(textDescripcion.Text.Trim()) == false && string.IsNullOrEmpty(textPrecio.Text.Trim()) == false)
+            {
+                textID_Producto.Text = "";
+                textDescripcion.Text = "";
+                textPrecio.Text = "";
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConsultarProductos ConsPro = new ConsultarProductos();
+            ConsPro.Show();
+        }
     }
 }
