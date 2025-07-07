@@ -17,6 +17,7 @@ namespace Sistema_Punto_de_Venta
         {
             InitializeComponent();
         }
+        public static int contadorFila = 0;
 
         private void button5_Click(object sender, EventArgs e)
         {

@@ -56,6 +56,16 @@
             this.lbVendedor = new System.Windows.Forms.Label();
             this.lbTotal = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -66,7 +76,7 @@
             this.btnSalir.BackColor = System.Drawing.Color.SlateGray;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Swis721 Blk BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(900, 490);
+            this.btnSalir.Location = new System.Drawing.Point(918, 656);
             this.btnSalir.UseVisualStyleBackColor = false;
             // 
             // TxtCodigoCliente
@@ -91,16 +101,17 @@
             // 
             // TxtDescripcion
             // 
-            this.TxtDescripcion.Location = new System.Drawing.Point(268, 225);
+            this.TxtDescripcion.Location = new System.Drawing.Point(404, 346);
+            this.TxtDescripcion.Multiline = true;
             this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(117, 20);
+            this.TxtDescripcion.Size = new System.Drawing.Size(142, 52);
             this.TxtDescripcion.TabIndex = 4;
             this.TxtDescripcion.Validar = true;
             this.TxtDescripcion.ValidarNumeros = false;
             // 
             // TxtCodigoProducto
             // 
-            this.TxtCodigoProducto.Location = new System.Drawing.Point(75, 222);
+            this.TxtCodigoProducto.Location = new System.Drawing.Point(152, 364);
             this.TxtCodigoProducto.Name = "TxtCodigoProducto";
             this.TxtCodigoProducto.Size = new System.Drawing.Size(112, 20);
             this.TxtCodigoProducto.TabIndex = 5;
@@ -109,7 +120,7 @@
             // 
             // TxtPrecio
             // 
-            this.TxtPrecio.Location = new System.Drawing.Point(460, 222);
+            this.TxtPrecio.Location = new System.Drawing.Point(629, 365);
             this.TxtPrecio.Name = "TxtPrecio";
             this.TxtPrecio.Size = new System.Drawing.Size(117, 20);
             this.TxtPrecio.TabIndex = 6;
@@ -118,7 +129,7 @@
             // 
             // TxtCantidad
             // 
-            this.TxtCantidad.Location = new System.Drawing.Point(649, 225);
+            this.TxtCantidad.Location = new System.Drawing.Point(888, 368);
             this.TxtCantidad.Name = "TxtCantidad";
             this.TxtCantidad.Size = new System.Drawing.Size(117, 20);
             this.TxtCantidad.TabIndex = 7;
@@ -236,7 +247,7 @@
             // 
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label4.Font = new System.Drawing.Font("Swis721 Blk BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(47, 248);
+            this.label4.Location = new System.Drawing.Point(65, 414);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(186, 45);
             this.label4.TabIndex = 17;
@@ -247,7 +258,7 @@
             // 
             this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label5.Font = new System.Drawing.Font("Swis721 Blk BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(233, 248);
+            this.label5.Location = new System.Drawing.Point(251, 414);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(188, 45);
             this.label5.TabIndex = 18;
@@ -258,7 +269,7 @@
             // 
             this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label6.Font = new System.Drawing.Font("Swis721 Blk BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(416, 248);
+            this.label6.Location = new System.Drawing.Point(434, 414);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(195, 45);
             this.label6.TabIndex = 19;
@@ -269,7 +280,7 @@
             // 
             this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label7.Font = new System.Drawing.Font("Swis721 Blk BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(610, 248);
+            this.label7.Location = new System.Drawing.Point(628, 414);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(188, 45);
             this.label7.TabIndex = 20;
@@ -280,7 +291,7 @@
             // 
             this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label8.Font = new System.Drawing.Font("Swis721 Blk BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(799, 248);
+            this.label8.Location = new System.Drawing.Point(817, 414);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(188, 45);
             this.label8.TabIndex = 21;
@@ -290,9 +301,17 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 248);
+            this.dataGridView1.ColumnHeadersVisible = false;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo,
+            this.Descripcion,
+            this.Precio,
+            this.Cantidad,
+            this.Importe});
+            this.dataGridView1.Location = new System.Drawing.Point(65, 472);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(940, 218);
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(940, 160);
             this.dataGridView1.TabIndex = 22;
             // 
             // pictureBox1
@@ -320,7 +339,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(706, 490);
+            this.label9.Location = new System.Drawing.Point(724, 656);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(60, 19);
             this.label9.TabIndex = 27;
@@ -339,7 +358,7 @@
             // lbTotal
             // 
             this.lbTotal.Font = new System.Drawing.Font("Swis721 Blk BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotal.Location = new System.Drawing.Point(772, 485);
+            this.lbTotal.Location = new System.Drawing.Point(790, 651);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(80, 28);
             this.lbTotal.TabIndex = 29;
@@ -348,11 +367,101 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label10.Font = new System.Drawing.Font("Swis721 Blk BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(75, 266);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(323, 30);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Ingresa los datos del articulo:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(65, 362);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(77, 19);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "Codigo:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(279, 364);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(119, 19);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "Descripcion:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(552, 364);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(71, 19);
+            this.label13.TabIndex = 33;
+            this.label13.Text = "Precio:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(775, 367);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(95, 19);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "Cantidad:";
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            this.Codigo.Width = 186;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.Width = 192;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.Width = 186;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 186;
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "Importe";
+            this.Importe.Name = "Importe";
+            this.Importe.Width = 186;
+            // 
             // Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 533);
+            this.ClientSize = new System.Drawing.Size(1036, 704);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lbTotal);
             this.Controls.Add(this.lbVendedor);
             this.Controls.Add(this.label9);
@@ -409,6 +518,11 @@
             this.Controls.SetChildIndex(this.label9, 0);
             this.Controls.SetChildIndex(this.lbVendedor, 0);
             this.Controls.SetChildIndex(this.lbTotal, 0);
+            this.Controls.SetChildIndex(this.label10, 0);
+            this.Controls.SetChildIndex(this.label11, 0);
+            this.Controls.SetChildIndex(this.label12, 0);
+            this.Controls.SetChildIndex(this.label13, 0);
+            this.Controls.SetChildIndex(this.label14, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -445,5 +559,15 @@
         private System.Windows.Forms.Label lbVendedor;
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
     }
 }
