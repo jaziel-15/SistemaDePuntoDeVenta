@@ -33,14 +33,14 @@ namespace Sistema_Punto_de_Venta
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count == 0)
+            if (dataGridView1.CurrentRow != null && dataGridView1.CurrentRow.Index >= 0)
             {
-                return;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
             else
             {
-                DialogResult = DialogResult.OK;
-                Close();
+                MessageBox.Show("Selecciona un producto antes de continuar.");
             }
         }
     }

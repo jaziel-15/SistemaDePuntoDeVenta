@@ -27,6 +27,8 @@ namespace Sistema_Punto_de_Venta
             Consultar();
         }
 
+      
+
         private void button2_Click(object sender, EventArgs e)
         {
             Guardar();

@@ -77,7 +77,14 @@ namespace Sistema_Punto_de_Venta
         private void button1_Click(object sender, EventArgs e)
         {
             ConsultarCliente ConsClie = new ConsultarCliente();
-            ConsClie.Show();
+            ConsClie.ShowDialog();
+
+            if (ConsClie.DialogResult == DialogResult.OK)
+            {
+                textID_Cliente.Text = ConsClie.dataGridView1.Rows[ConsClie.dataGridView1.CurrentRow.Index].Cells[0].Value.ToString();
+                textNombre_Cliente.Text = ConsClie.dataGridView1.Rows[ConsClie.dataGridView1.CurrentRow.Index].Cells[1].Value.ToString();
+                textApellido_Cliente.Text = ConsClie.dataGridView1.Rows[ConsClie.dataGridView1.CurrentRow.Index].Cells[2].Value.ToString();
+            }
         }
     }
 }

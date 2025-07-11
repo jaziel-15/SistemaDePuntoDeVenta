@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LibreriaDLL;
+using Microsoft.Reporting.WinForms;
 
 namespace Sistema_Punto_de_Venta
 {
@@ -170,6 +171,48 @@ namespace Sistema_Punto_de_Venta
             TxtCodigoCliente.Focus();
                
             
+        }
+
+        private void btFacturar_Click(object sender, EventArgs e)
+        {
+            if (contadorFila != 0)
+            {
+                try
+                {
+                    string cmd = string.Format("Exec ActualizarFacturas '{0}'",TxtCodigoCliente.Text.Trim());
+                    DataSet DS = Biblioteca.Herramientas(cmd);
+
+                    string NumeroFactura = DS.Tables[0].Rows[0]["NumeroFactura"].ToString().Trim();
+
+                    foreach (DataGridViewRow fila in dataGridView1.Rows)
+                    {
+                        cmd = string.Format("Exec ActualizarDetalles '{0}','{1}','{2}','{3}'",NumeroFactura,fila.Cells[0].Value.ToString(), fila.Cells[2].Value.ToString(),fila.Cells[3].Value.ToString());
+                        DS = Biblioteca.Herramientas(cmd);
+                    }
+
+                    cmd = string.Format("Exec DatosFactura {0}", NumeroFactura);
+
+                    DS = Biblioteca.Herramientas(cmd);
+
+                    Factura fac = new Factura();
+
+                    ReportDataSource rds = new ReportDataSource("DataSet1", DS.Tables[0]);
+
+                    fac.reportViewer1.LocalReport.DataSources.Clear();
+
+                    fac.reportViewer1.LocalReport.DataSources.Add(rds);
+
+                    fac.reportViewer1.RefreshReport();
+
+                    fac.ShowDialog();
+
+                    Nuevo();
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Ha ocurrido un error", error.Message);
+                }
+            }
         }
     }
 }

@@ -39,7 +39,7 @@ namespace Sistema_Punto_de_Venta
             {
                 try
                 {
-                    string insertar = string.Format("EXEC ActualizarClientes '{0}','{1}','{2}'", textID_Producto.Text.Trim(), textDescripcion.Text.Trim(), textPrecio.Text.Trim());
+                    string insertar = string.Format("EXEC ActualizarProductos '{0}','{1}','{2}'", textID_Producto.Text.Trim(), textDescripcion.Text.Trim(), textPrecio.Text.Trim());
                     Biblioteca.Herramientas(insertar);
                     MessageBox.Show("Cliente Guaraddo correctamente");
                     return true;
@@ -92,7 +92,14 @@ namespace Sistema_Punto_de_Venta
         private void button1_Click(object sender, EventArgs e)
         {
             ConsultarProductos ConsPro = new ConsultarProductos();
-            ConsPro.Show();
+            ConsPro.ShowDialog();
+
+            if (ConsPro.DialogResult == DialogResult.OK)
+            {
+                textID_Producto.Text = ConsPro.dataGridView1.Rows[ConsPro.dataGridView1.CurrentRow.Index].Cells[0].Value.ToString();
+                textDescripcion.Text = ConsPro.dataGridView1.Rows[ConsPro.dataGridView1.CurrentRow.Index].Cells[1].Value.ToString();
+                textPrecio.Text = ConsPro.dataGridView1.Rows[ConsPro.dataGridView1.CurrentRow.Index].Cells[2].Value.ToString();
+            }
         }
     }
 }
