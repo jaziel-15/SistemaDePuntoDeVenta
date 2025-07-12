@@ -114,3 +114,4 @@ C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Si
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_.E7DD599B.Up2Date
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.exe
 C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.pdb
+C:\Users\ccard\source\repos\Github_SistemaPos\SistemaDePuntoDeVenta\obj\Debug\Sistema_Punto_de_Venta.Ventas.resources

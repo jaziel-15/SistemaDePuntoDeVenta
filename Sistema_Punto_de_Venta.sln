@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema_Punto_de_Venta", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaDLL", "LibreriaDLL\LibreriaDLL.csproj", "{6C73F7A3-3517-4BFB-8C05-EF22990EF775}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\Setup\Setup.vdproj", "{F03CBE41-1C0A-46CA-8DF2-167E123CBD9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{6C73F7A3-3517-4BFB-8C05-EF22990EF775}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C73F7A3-3517-4BFB-8C05-EF22990EF775}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C73F7A3-3517-4BFB-8C05-EF22990EF775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F03CBE41-1C0A-46CA-8DF2-167E123CBD9B}.Debug|Any CPU.ActiveCfg = Debug
+		{F03CBE41-1C0A-46CA-8DF2-167E123CBD9B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

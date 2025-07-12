@@ -138,5 +138,12 @@ namespace Sistema_Punto_de_Venta
             Fact.MdiParent = this;
             Fact.Show();
         }
+
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ventas vent = new Ventas();
+            vent.MdiParent = this;
+            vent.Show();
+        }
     }
 }
